@@ -6,10 +6,20 @@ public class SliceArray {
 
     public static void main(String[] args) {
         int array[] = {7, 5, 9, 1, 5, 9, 1, 4};
-        int[] new_array = slice(array, 0, 2);
+        int[] new_array = slice(array, 0, 5);
 
         for (int i = 0; i < new_array.length; i++) {
             System.out.print(new_array[i] + " ");
+        }
+        System.out.println("\n---");
+
+
+        //тест для решения из инета
+        int array2[] = {7, 5, 9, 1, 5, 9, 1, 4};
+        int[] new_array2 = slice(array, 0, 5);
+
+        for (int i = 0; i < new_array2.length; i++) {
+            System.out.print(new_array2[i] + " ");
         }
     }
 
@@ -27,6 +37,17 @@ public class SliceArray {
                 j++;
         }
         return arr2;
+    }
+
+    // классное решение из инета
+
+    public static int[] slice2(int[] array, int from, int to) {
+        int length = to - from;
+        int[] result = new int[length];
+        for (int i = 0; i < length; i++) {
+            result[i] = array[from + i];
+        }
+        return result;
     }
 
 }
