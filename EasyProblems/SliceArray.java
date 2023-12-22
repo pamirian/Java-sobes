@@ -23,7 +23,7 @@ public class SliceArray {
         }
     }
 
-
+// мое решение, затраченное время: 5 мин.
     public static int[] slice(int[] array, int from, int to) {
         int number =0;
         for (int i=from; i<to; i++){
