@@ -11,7 +11,7 @@ public class MixedStrings {
     public static void main(String[] args) {
         System.out.println("\"abcd, qwer\" -> "+mixedStrings("abcd", "qwer"));
         System.out.println("\"ab, qwer\" -> "+mixedStrings("ab", "qwer"));
-        System.out.println("\"abcd, qw\" -> "+mixedStrings("abcd", "qw"));
+        System.out.println("\"abcd, qw\" -> "+mixedStrings("abcd", "qw"));git
     }
 
     public static String mixedStrings(String str1, String str2) {
